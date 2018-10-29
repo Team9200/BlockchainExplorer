@@ -1,0 +1,35 @@
+#title-bar {
+    height: 65px;
+    background-color:lightblue;
+    color: black;
+}
+
+#title-bar .titleImg {
+    width: 135px;
+    height: 65px;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+
+#title-bar .titleText {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+#title-bar #schText {
+    float: right;
+    text-align: center;
+    width: 200px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+#title-bar .schBtn {
+    float: right;
+    width: 60px;
+    height: 35px;
+    margin-right: 40px;
+    margin-top: 14px;
+}

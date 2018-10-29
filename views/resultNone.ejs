@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>OTIE <%=schText%> 검색</title>
+        <link href="common.css" rel="stylesheet">
+        <link href="titlebar.css" rel="stylesheet">
+        <link href="result.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <form id="frm" method="GET" action="/result">
+            <div id="title-bar">
+                <img class="titleImg" src="./img/teamLogo_1.png" onclick="location.href='./'">
+                <span class="titleText"><b>Open Threat Intelligence Ecosystem</b></span>
+                <img class="schBtn" src="./img/search.png" onclick="document.getElementById('frm').submit();">
+                <input type="text" id="schText" name="schText" placeholder="검색어 입력">
+            </div>
+        </form>
+
+        <div class="content">
+            <span class="searchTitle">'<b><%=schText%></b>' 검색 결과가 없습니다!!!</span>
+        </div>
+    </body>
+</html>

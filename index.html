@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>OTIE 블록체인 탐색기</title>
+        <link href="common.css" rel="stylesheet">
+        <link href="titlebar.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="title-bar">
+            <img class="titleImg" src="./img/teamLogo_1.png" onclick="location.href='./'">
+            <span class="titleText"><b>Open Threat Intelligence Ecosystem</b></span>
+        </div>
+
+        <form id="frm" method="GET" action="/result">
+            <div class="content">
+                <span class="searchTitle"><b>OTIE 위협 정보 및 블록 검색</b></span>
+                <br><br><br><br><br>
+                <div class="search">
+                    <input type="text" id="schText" name="schText" placeholder="Block / BlockHash / FileType / #FileHash / #Tag / ETC..."><span><img class="schBtn" src="./img/search.png" onclick="document.getElementById('frm').submit();"></span>
+                </div>
+                <br><br>
+                <label><b>Block 1432</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>#[MD5, SHA1, SHA256]</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>#CryptoMiner</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>#Fileless</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>#Ransomware</b></label>
+            </div>
+        </form>
+
+        <div class="footer">
+            <div clsss="footerWrap">
+                <span class="footerLink">프로젝트 소개</span>
+                <span class="footerBar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <span class="footerLink">공지사항</span>
+                <span class="footerBar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <span class="footerLink">오픈 소스</span>
+                <span class="footerBar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <span class="footerLink">도움말</span>
+            </div>
+        </div>
+    </body>
+</html>

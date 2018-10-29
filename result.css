@@ -1,0 +1,45 @@
+.content {
+    text-align: left;
+    margin-top: 45px;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+.content .searchTitle {
+    font-size: 27px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer .footerWrap{
+    text-align: center;
+}
+
+table.table1 {
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    margin: 15px 10px;
+}
+table.table1 th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: PowderBlue;
+}
+table.table1 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}

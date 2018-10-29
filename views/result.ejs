@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>OTIE <%=schText%> 검색</title>
+        <link href="common.css" rel="stylesheet">
+        <link href="titlebar.css" rel="stylesheet">
+        <link href="result.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <form id="frm" method="GET" action="/result">
+            <div id="title-bar">
+                <img class="titleImg" src="./img/teamLogo_1.png" onclick="location.href='./'">
+                <span class="titleText"><b>Open Threat Intelligence Ecosystem</b></span>
+                <img class="schBtn" src="./img/search.png" onclick="document.getElementById('frm').submit();">
+                <input type="text" id="schText" name="schText" placeholder="검색어 입력">
+            </div>
+        </form>
+
+        <div class="content">
+            <span class="searchTitle">'<b><%=schText%></b>' 검색 결과</span>
+            <br><br>
+            <table class="table1">
+                <tr>
+                    <th scope="row">블록 번호</th>
+                    <td><%=index%></td>
+                </tr>
+                <tr>
+                    <th scope="row">타임 스탬프</th>
+                    <td><%=timeStamp%></td>
+                </tr>
+                <tr>
+                    <th scope="row">논스</th>
+                    <td><%=nonce%></td>
+                </tr>
+                <tr>
+                    <th scope="row">해시</th>
+                    <td><%=hash%></td>
+                </tr>
+                <tr>
+                    <th scope="row">이전 블록 해시</th>
+                    <td><%=previousBlockHash%></td>
+                </tr>
+                <tr>
+                    <th scope="row">멀웨어 리스트</th>
+                    <td><%=malwaresHashList%></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
